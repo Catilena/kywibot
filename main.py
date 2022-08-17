@@ -43,7 +43,7 @@ def tweet_quote():
     while True:
         print('getting a random quote...')
         tweet, reply = create_tweet()
-        qtweet = api.update_status(status=tweet)
+        qtweet = api.update_status(tweet)
         api.update_status(status=reply, in_reply_to_status_is=qtweet.id, auto_populate_reply_metadata=True)
         time.sleep(interval)
 
