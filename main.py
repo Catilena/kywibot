@@ -34,7 +34,7 @@ def create_tweet():
 
 
 def tweet_quote():
-    interval = 60*60*24
+    interval = 60*24
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret_key)
     auth.set_access_token(access_token, access_token_secret)
